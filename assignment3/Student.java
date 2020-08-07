@@ -19,7 +19,7 @@ public class Student {
 		this.age = age;
 	}
 	@Override
-	public int hashcode() {
+	public int hashCode() {
 		int hash=rollno.hashCode();
 		return hash;
 	}
@@ -42,7 +42,7 @@ public class Student {
 
 		Student that = (Student) arg;
 
-		boolean isequal = this.rollno == that.rollno;
+		boolean isequal = this.rollno.equals (that.rollno);
 
 		return isequal;
 	}
