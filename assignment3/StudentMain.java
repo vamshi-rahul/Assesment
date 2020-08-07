@@ -19,7 +19,15 @@ public void runapp() {
 		Student student= iterator.next();
 		System.out.println("age="+student.getAge()+" "+"Rollno:"+student.getRollno());
 	}
-	
+}
+public List<Student> toList(Set<Student> set){
+	List<Student> list= new ArrayList<>();
+	for(Student student : set) {
+		if(student.getAge()>21) {
+			list.add(student);
+		}
+	}
+	return list;
 	
 }
 }

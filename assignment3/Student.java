@@ -18,6 +18,12 @@ public class Student {
 	public void setAge(int age) {
 		this.age = age;
 	}
+	@Override
+	public int hashcode() {
+		int hash=rollno.hashCode();
+		return hash;
+	}
+	
 
 	@Override
 	public boolean equals(Object arg) {
